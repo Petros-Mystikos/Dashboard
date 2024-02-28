@@ -1,0 +1,214 @@
+/* begging */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: auto auto;
+    grid-template-areas: 
+    'sidebar header'
+    'sidebar main';
+}
+
+/* sidebar */
+.sidebar{
+    padding-top: 5rem;
+    grid-area: sidebar;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 12rem;
+    align-items: center;
+}
+
+.sidebar-content > div{
+    display: flex;
+    align-items: center;
+    gap:1rem;
+    margin-top: 1rem;
+    font-size: 1.5rem;
+}
+
+.logo-title{
+    font-size: 2rem;
+}
+
+
+/* header */
+.header{
+    padding: 2rem 3rem;
+    grid-area: header;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    'search-bar profile-icon'
+    'nav nav';
+    gap: 1rem 2rem;
+}
+
+.search-bar{
+    grid-area: search-bar;
+    display: flex;
+    gap: 1rem;
+}
+
+#search{
+    flex-basis: max(80%, 1100px);
+    border-radius: 20px;
+    height: 3rem;
+    font-size: 1.3rem;
+    padding: 1rem;
+}
+
+.profile-icon{
+    grid-area: profile-icon;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.nav{
+    grid-area: nav;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+/* main */
+.main{
+    padding: 2rem;
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas: 
+    'article  announcements '
+    'article  comments';
+    gap: 1rem;
+}
+
+/* article and it's content */
+.article{
+    grid-area: article;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30ch, 1fr));
+    gap: 2rem;
+}
+
+.project{
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 1rem;
+}
+
+.project-header{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.project-content{
+    font-size: 1.2rem;
+}
+
+/* announcements and it's content */
+.announcements{
+    grid-area: announcements;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+}
+
+.announcement-title{
+    font-size: 1.8rem;
+}
+
+.announcement-container{
+    padding: 1rem;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+
+.announce{
+    text-align: center;
+    font-size: 1.4rem;
+}
+
+.announce-content{
+    font-size: 1.2rem;
+}
+
+/* comments and it's content */
+.comments{
+    grid-area: comments;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+
+}
+
+.comments-title{
+    font-size: 1.8rem;
+}
+
+.comments-container{
+    display: grid;
+    gap: 1rem;
+}
+
+.comment{
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 0.5rem;
+}
+
+.comm{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: .8rem;
+}
+
+.comment-account{
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+.opinion{
+    font-size: 1.2rem;
+}
+
+/* icons */
+.icon > img,
+.comment-icon > img{
+    border-radius: 50%;
+    height: auto;
+    width: 50px;
+}
+
+.account-icon > img,
+.search-icon > img{
+    border-radius: 50%;
+    height: auto;
+    width: 50px;
+}

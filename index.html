@@ -4,55 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard Car</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
         <div class="sidebar">
-            <div class="logo">
-                <div class="icon"></div>
-                <h2 class="logo-title">Women Drivers</h2>
-            </div>
-
-            <div class="home">
-                <div class="icon"><img src="./public/sidebar/castle.png" alt="castle" ></div>
-                <p>My Garage</p>
-            </div>
-            <div class="profile">
-                <div class="icon"><img src="./public/sidebar/car.png" alt="car" ></div>
-                <p>My Car</p>
-            </div>
-            <div class="messages">
-                <div class="icon"><img src="./public/sidebar/call-me-sign.png" alt="call me sign" ></div>
-                <p>My DMS</p>
-            </div>
-            <div class="community">
-                <div class="icon"><img src="./public/sidebar/group-of-girls.png" alt="group of girls" ></div>
-                <p>My Girls</p>
-            </div>
-
-            <div class="setting">
-                <div class="icon"><img src="./public/sidebar/settings.png" alt="gear" ></div>
-                <p>Settings</p>
-            </div>
-            <div class="support">
-                <div class="icon"><img src="./public/sidebar/messages.png" alt="writing hand" ></div>
-                <p>Support</p>
-            </div>
-            <div class="privacy">
-                <div class="icon"><img src="./public/sidebar/id.png" alt="id" ></div>
-                <p>Privacy</p>
+            <h2 class="logo-title">Women Drivers</h2>
+            
+            <div class="sidebar-content">
+                <div class="home">
+                    <div class="icon"><img src="./public/sidebar/castle.png" alt="castle" ></div>
+                    <p>My Garage</p>
+                </div>
+                <div class="profile">
+                    <div class="icon"><img src="./public/sidebar/car.png" alt="car" ></div>
+                    <p>My Car</p>
+                </div>
+                <div class="messages">
+                    <div class="icon"><img src="./public/sidebar/call-me-sign.png" alt="call me sign" ></div>
+                    <p>My DMS</p>
+                </div>
+                <div class="community">
+                    <div class="icon"><img src="./public/sidebar/group-of-girls.png" alt="group of girls" ></div>
+                    <p>My Girls</p>
+                </div>
+                <div class="setting">
+                    <div class="icon"><img src="./public/sidebar/settings.png" alt="gear" ></div>
+                    <p>Settings</p>
+                </div>
+                <div class="support">
+                    <div class="icon"><img src="./public/sidebar/messages.png" alt="writing hand" ></div>
+                    <p>Support</p>
+                </div>
+                <div class="privacy">
+                    <div class="icon"><img src="./public/sidebar/id.png" alt="id" ></div>
+                    <p>Privacy</p>
+                </div>
             </div>
         </div>
 
         <div class="header">
             <div class="search-bar">
                 <div class="search-icon"><img src="./public/thinking-face.png" alt="thinking face emoji" ></div>
-                <input type="search" name="search" id="search">
+                <input type="search" name="search" id="search" autocomplete="off" placeholder="Search bar">
             </div>
             <div class="profile-icon">
-                <div class="account-icon"></div>
-                <div class="account"></div>
-                <div class="notification-icon"></div>
+                <div class="account-icon"><img src="./public/girls/mysterious-girl.png" alt="mysterious girl" ></div>
+                <div class="account">Top ME</div>
             </div>
             <div class="nav">
                 <div class="news">News</div>
@@ -64,29 +62,38 @@
         <div class="main">
             <div class="article">
                 <h1 class="project-title">My Car Projects</h1>
-                <div class="project">
-                    <h2 class="project-header">Project 1</h2>
-                    <p class="project-content">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis recusandae, aliquid officia minus sequi quas ex reprehenderit illo, nisi corporis enim animi explicabo molestiae voluptate.</p>
-                </div>
-                <div class="project">
-                    <h2 class="project-header">Project 2</h2>
-                    <p class="project-content">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis recusandae, aliquid officia minus sequi quas ex reprehenderit illo, nisi corporis enim animi explicabo molestiae voluptate.</p>
-                </div>
-                <div class="project">
-                    <h2 class="project-header">Project 3</h2>
-                    <p class="project-content">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis recusandae, aliquid officia minus sequi quas ex reprehenderit illo, nisi corporis enim animi explicabo molestiae voluptate.</p>
-                </div>
-                <div class="project">
-                    <h2 class="project-header">Project 4</h2>
-                    <p class="project-content">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis recusandae, aliquid officia minus sequi quas ex reprehenderit illo, nisi corporis enim animi explicabo molestiae voluptate.</p>
-                </div>
-                <div class="project">
-                    <h2 class="project-header">Project 5</h2>
-                    <p class="project-content">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis recusandae, aliquid officia minus sequi quas ex reprehenderit illo, nisi corporis enim animi explicabo molestiae voluptate.</p>
-                </div>
-                <div class="project">
-                    <h2 class="project-header">Project 6</h2>
-                    <p class="project-content">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis recusandae, aliquid officia minus sequi quas ex reprehenderit illo, nisi corporis enim animi explicabo molestiae voluptate.</p>
+                
+                <div class="cards">
+                    <div class="project">
+                        <h2 class="project-header">Project 1</h2>
+                        <p class="project-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga sunt suscipit pariatur velit aspernatur nam repellat, enim excepturi ipsum praesentium. Fugiat nemo molestiae quas consequuntur voluptas voluptatem provident rem maiores.
+                        Rerum, odit. Vitae autem amet ullam dolore harum quaerat nemo accusantium minus! Accusantium placeat sint at dolor facere doloremque distinctio quod consequuntur quam vel, officia facilis voluptas. Sequi, officiis quia.</p>
+                    </div>
+                    <div class="project">
+                        <h2 class="project-header">Project 2</h2>
+                        <p class="project-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga sunt suscipit pariatur velit aspernatur nam repellat, enim excepturi ipsum praesentium. Fugiat nemo molestiae quas consequuntur voluptas voluptatem provident rem maiores.
+                        Rerum, odit. Vitae autem amet ullam dolore harum quaerat nemo accusantium minus! Accusantium placeat sint at dolor facere doloremque distinctio quod consequuntur quam vel, officia facilis voluptas. Sequi, officiis quia.</p>
+                    </div>
+                    <div class="project">
+                        <h2 class="project-header">Project 3</h2>
+                        <p class="project-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga sunt suscipit pariatur velit aspernatur nam repellat, enim excepturi ipsum praesentium. Fugiat nemo molestiae quas consequuntur voluptas voluptatem provident rem maiores.
+                        Rerum, odit. Vitae autem amet ullam dolore harum quaerat nemo accusantium minus! Accusantium placeat sint at dolor facere doloremque distinctio quod consequuntur quam vel, officia facilis voluptas. Sequi, officiis quia.</p>
+                    </div>
+                    <div class="project">
+                        <h2 class="project-header">Project 4</h2>
+                        <p class="project-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga sunt suscipit pariatur velit aspernatur nam repellat, enim excepturi ipsum praesentium. Fugiat nemo molestiae quas consequuntur voluptas voluptatem provident rem maiores.
+                        Rerum, odit. Vitae autem amet ullam dolore harum quaerat nemo accusantium minus! Accusantium placeat sint at dolor facere doloremque distinctio quod consequuntur quam vel, officia facilis voluptas. Sequi, officiis quia.</p>
+                    </div>
+                    <div class="project">
+                        <h2 class="project-header">Project 5</h2>
+                        <p class="project-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga sunt suscipit pariatur velit aspernatur nam repellat, enim excepturi ipsum praesentium. Fugiat nemo molestiae quas consequuntur voluptas voluptatem provident rem maiores.
+                        Rerum, odit. Vitae autem amet ullam dolore harum quaerat nemo accusantium minus! Accusantium placeat sint at dolor facere doloremque distinctio quod consequuntur quam vel, officia facilis voluptas. Sequi, officiis quia.</p>
+                    </div>
+                    <div class="project">
+                        <h2 class="project-header">Project 6</h2>
+                        <p class="project-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga sunt suscipit pariatur velit aspernatur nam repellat, enim excepturi ipsum praesentium. Fugiat nemo molestiae quas consequuntur voluptas voluptatem provident rem maiores.
+                        Rerum, odit. Vitae autem amet ullam dolore harum quaerat nemo accusantium minus! Accusantium placeat sint at dolor facere doloremque distinctio quod consequuntur quam vel, officia facilis voluptas. Sequi, officiis quia.</p>
+                    </div>
                 </div>
             </div>
 
@@ -94,15 +101,15 @@
                 <h2 class="announcement-title">Announcement</h2>
                 <div class="announcement-container">
                     <h3 class="announce">Announcement 1</h3>
-                    <p class="anounce-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, repellendus!</p>
+                    <p class="announce-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, repellendus!</p>
                 </div>
                 <div class="announcement-container">
                     <h3 class="announce">Announcement 2</h3>
-                    <p class="anounce-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, repellendus!</p>
+                    <p class="announce-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, repellendus!</p>
                 </div>
                 <div class="announcement-container">
                     <h3 class="announce">Announcement 3</h3>
-                    <p class="anounce-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, repellendus!</p>
+                    <p class="announce-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, repellendus!</p>
                 </div>
             </div>
 
