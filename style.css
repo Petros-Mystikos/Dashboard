@@ -24,6 +24,7 @@
     justify-content: start;
     gap: 12rem;
     align-items: center;
+    background-color: #5FBDFF;
 }
 
 .sidebar-content > div{
@@ -50,6 +51,7 @@
     'search-bar profile-icon'
     'nav nav';
     gap: 1rem 2rem;
+    background-color: #C5FFF8;
 }
 
 .search-bar{
@@ -95,6 +97,7 @@
     'article  announcements '
     'article  comments';
     gap: 1rem;
+    background-color: #96EFFF;
 }
 
 /* article and it's content */
@@ -113,9 +116,12 @@
 }
 
 .project{
-    border: 1px solid black;
+    border: 1px solid #42BFDD;
     border-radius: 20px;
     padding: 1rem;
+    background-color: #42BFDD;
+    filter: drop-shadow(5px 5px 10px #7B66FF);
+
 }
 
 .project-header{
@@ -143,8 +149,10 @@
 
 .announcement-container{
     padding: 1rem;
-    border: 1px solid black;
+    border: 1px solid #FFD9CE;
     border-radius: 20px;
+    background-color: #FFD9CE;
+    filter: drop-shadow(5px 5px 10px #7B66FF);
 }
 
 .announce{
@@ -177,9 +185,11 @@
 }
 
 .comment{
-    border: 1px solid black;
+    border: 1px solid #EDDFEF;
     border-radius: 20px;
     padding: 0.5rem;
+    background-color: #EDDFEF;
+    filter: drop-shadow(5px 5px 10px #7B66FF);
 }
 
 .comm{
